@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
+    <title>Firebase CRUD App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Firebase CRUD App</h1>
+    </header>
+    <div class="container">
+      <form id="userForm">
+        <h2>Add User</h2>
+        <div class="form-control">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-control">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-control">
+          <label for="age">Age:</label>
+          <input type="number" id="age" required />
+        </div>
+        <button type="submit">Add User</button>
+      </form>
+      <div id="userList">
+        <h2>Users</h2>
+        <div id="userList">
+            <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+        
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
